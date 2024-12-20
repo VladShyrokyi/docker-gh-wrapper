@@ -19,6 +19,12 @@ git clone https://github.com/your-username/github-cli-wrapper.git
 cd github-cli-wrapper
 ```
 
+### Copy the Wrapper Script
+Copy the wrapper script (`gh.sh`) to a any directory:
+```bash
+cp gh.sh ~/gh.sh
+```
+
 ## Usage
 
 ### Running the Wrapper Script
@@ -61,10 +67,15 @@ Running the script without arguments launches an interactive session:
 ~/gh.sh
 ```
 
+### Credentials Storage
+The script automatically stores GitHub CLI credentials in a `gh` folder located in the same directory as the script. Ensure that this folder is secure and accessible only by authorized users.
+
 ## Cleanup
 To remove unused Docker images or resources, you can clean up using standard Docker commands:
 ```bash
 docker image prune -f
+# Also remove the gh folder containing credentials
+rm -rf ~/gh
 ```
 
 ## License
