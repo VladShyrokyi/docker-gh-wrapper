@@ -15,7 +15,7 @@ This repository provides a Bash script wrapper for the GitHub CLI (`gh`) to stre
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/your-username/github-cli-wrapper.git
+git clone https://github.com/VladShyrokyi/github-cli-wrapper.git
 cd github-cli-wrapper
 ```
 
